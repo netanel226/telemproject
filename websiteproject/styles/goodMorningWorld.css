@@ -1,0 +1,328 @@
+﻿/*הגדרות-כלליות-של-העמוד*/
+
+body {
+    direction: rtl;
+    font-family: 'OS Luizi Round_FFC';
+    overflow-x: hidden;
+    scroll-behavior: auto;
+    right: 2vw;
+  
+}
+.cheq {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+
+h1 {
+    font-size: 4vw;
+}
+
+h2 {
+    font-size: 2.5vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+
+
+
+
+/*תכונות-והגדרות-של-תמונה-האיקון*/
+.icon {
+    width: 3.5vw;
+    height: auto;
+    filter: brightness(400%);
+}
+
+
+/*הגדרות-כלליות-של-שורת-קישור-איקון*/
+
+.aicon {
+    position: absolute;
+    right: 1vw;
+    top: 1vh;
+    width: 1vw;
+    height: 0.5vh;
+}
+
+
+/*הגדרות-כלליות-של-תפריט-ניווט*/
+
+
+#mainnav {
+    position: fixed;
+    display: inline-block;
+    background-color: #577058;
+    height: 80px;
+    text-align: center;
+    width: 100%;
+    top: 0px;
+    direction: rtl;
+    font-size: 20px;
+    z-index: 1;
+}
+
+
+.main-nav-list .navli {
+    min-width: 180px;
+}
+
+
+/*הגדרות-של-ניווט-UL*/
+
+nav ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 3vh;
+}
+
+
+
+
+/*הגדרות-של-פנימית*/
+
+
+.innerli {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/*הגדרות-של-תפריט-חבוי*/
+
+.show {
+    display: none;
+    height: auto;
+    width: auto;
+    background-color: #ebe5d9;
+    position: relative;
+    top: 3vh;
+    margin-top: 26px;
+    z-index: 1;
+}
+
+.notallowed {
+    cursor: not-allowed;
+    color: gray;
+}
+
+
+nav a {
+    color: white;
+    text-decoration-line: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+.hover:hover .show {
+    display: block;
+    animation: slideInDown 0.5s ease-in-out;
+    z-index: 1;
+    position: relative;
+    top: 11px;
+}
+
+nav .innerli a {
+    color: #008080;
+}
+
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+
+
+
+/*ניווט סוף*/
+
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 0;
+    width: 80vw;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.krum-cont  {
+    top: 8vh;
+    position: relative;
+    
+}.krum-cont a  {
+    
+    color:black;
+}
+    .krum-cont nav ol li{
+        display:inline-block;
+
+
+    }
+.krum-cont nav ol li:after {
+    content:">";
+}
+.krum-cont nav ol li:last-child:after {
+    content:"";
+}
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+.section2-h1 {
+    position: relative;
+    
+    bottom: 23px;
+}
+
+.section2 > p {
+    font-size: 2vw;
+    position: relative;
+    bottom: 52px;
+}
+
+#sun {
+    width: 15vw;
+}
+
+
+
+/*חלק שני*/
+.section3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+.recepe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgrec {
+    clip-path:circle();
+    object-fit: cover;
+    width:10vw;
+}
+
+
+
+.dish1 {
+    width: 14vw;
+    margin-bottom:10px;
+    
+}
+.dish2 {
+    width: 10vw;
+}
+.dish3 {
+    width: 10vw;
+}
+.H1 {
+    position: relative;
+    top: 35PX;
+}
+
+/*תחילת  פוטר  */
+#last-section {
+    font-size: 1vw;
+    width: 100vw;
+    background-color: #577058;
+    position: relative;
+    top: 18vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fotterli {
+    margin-right: 20px;
+}
+
+.fotter-ul {
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/*אנימציות*/
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-7%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+@-webkit-keyframes zoomIn {
+    from{
+
+
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+    transform: scale3d(0.3, 0.3, 0.3);
+}
+
+50% {
+    opacity: 1;
+}
+
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.animate__zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+
+

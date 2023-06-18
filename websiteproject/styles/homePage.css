@@ -1,0 +1,526 @@
+﻿/*הגדרות-כלליות-של-העמוד*/
+
+body {
+    direction: rtl;
+    font-family: 'OS Luizi Round_FFC';
+    overflow-x: hidden;
+    scroll-behavior: auto;
+    right: 2vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+}
+
+
+h1 {
+    font-size: 5vw;
+}
+
+
+
+h2 {
+    font-size: 2.5vw;
+}
+
+h3 {
+    font-size: 2vw;
+}
+
+
+
+
+
+/*תכונות-והגדרות-של-תמונה-האיקון*/
+.icon {
+    width: 3.5vw;
+    height: auto;
+    filter: brightness(400%);
+}
+
+
+/*הגדרות-כלליות-של-שורת-קישור-איקון*/
+
+.aicon {
+    position: absolute;
+    right: 1vw;
+    top: 1vh;
+    width: 1vw;
+    height: 0.5vh;
+}
+
+
+/*הגדרות-כלליות-של-תפריט-ניווט*/
+
+
+#mainnav {
+    position: fixed;
+    display: inline-block;
+    background-color: #577058;
+    height: 80px;
+    text-align: center;
+    width: 100%;
+    top: 0px;
+    direction: rtl;
+    font-size: 20px;
+    z-index: 1;
+}
+
+
+.main-nav-list .navli {
+    min-width: 180px;
+}
+
+
+/*הגדרות-של-ניווט-UL*/
+
+nav ul {
+    list-style: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 3vh;
+}
+
+
+
+
+/*הגדרות-של-פנימית*/
+
+
+.innerli {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+/*הגדרות-של-תפריט-חבוי*/
+
+.show {
+    display: none;
+    height: auto;
+    width: auto;
+    background-color: #ebe5d9;
+    position: relative;
+    top: 3vh;
+    margin-top: 26px;
+    z-index: 1;
+}
+
+.notallowed {
+    cursor: not-allowed;
+    color: gray;
+}
+
+
+nav a {
+    color: white;
+    text-decoration-line: none;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+
+.hover:hover .show {
+    display: block;
+    position:relative;
+    top:11px;
+    animation: slideInDown 0.5s ease-in-out;
+    z-index: 1;
+}
+
+
+nav .innerli a {
+    color: #008080;
+}
+
+
+nav ul li a:hover {
+    font-weight: bolder;
+}
+
+
+
+/*ניווט סוף*/
+
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+
+
+.section2 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    align-items: center;
+}
+
+#background {
+    width: 100%;
+    
+}
+
+
+.slogen {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 105px;
+    right: 19vw;
+    top: 28vh;
+}
+
+.IconMainHeader {
+    width: 135px
+}
+
+.iv {
+    text-align: center;
+}
+
+
+
+/*חלק א סוף*/
+/*חלק ב סוף*/
+
+
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+}
+
+    #section3 > h2 {
+        text-align-last: center;
+        margin-left: 170px;
+        margin-right: 167px;
+    }
+
+
+
+#mainbox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    gap: 30px
+}
+
+
+.img2 {
+    width: 20vw;
+    height: 30vh;
+    margin: 1vw;
+}
+
+
+
+h2.show2 {
+    display: none;
+    color: black;
+    text-align: center;
+    width: 19vw;
+    height: 0;
+    right: 1vw;
+}
+
+.box:hover h2.show2 {
+    display: block;
+    text-decoration-color: black;
+    margin: 0;
+    text-align: center;
+}
+
+/*אפקט צל */
+
+
+.upper_left:hover, h2.show2:hover {
+    position: inherit;
+    width: 22vw;
+    margin: 0vw;
+    box-shadow: -10px -10px 9px black;
+}
+
+.upper_center:hover, h2.show2:hover {
+    position: inherit;
+    width: 22vw;
+    margin: 0vw;
+    box-shadow: 0px -10px 9px black;
+}
+
+.upper_right:hover, h2.show2:hover {
+    position: inherit;
+    width: 22vw;
+    margin: 0vw;
+    box-shadow: 10px -10px 9px black;
+}
+
+.bottom_right:hover, h2.show2:hover {
+    position: inherit;
+    width: 22vw;
+    margin: 0vw;
+    box-shadow: 10px 10px 9px black;
+}
+
+.bottom_center:hover, h2.show2:hover {
+    position: inherit;
+    width: 22vw;
+    margin: 0vw;
+    box-shadow: 0px 10px 9px black;
+}
+
+.bottom_left:hover, h2.show2:hover {
+    position: inherit;
+    width: 22vw;
+    margin: 0vw;
+    box-shadow: -10px 10px 9px black;
+}
+
+
+
+/*סוף חלק ב  */
+/*תחילת  חלק ג  */
+
+
+
+#section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cde5cd;
+}
+
+
+
+#main-box-4 {
+    display: flex;
+    text-align: center;
+    gap:30px;
+}
+
+.circle_img {
+    width: 15vw;
+    height: auto;
+    clip-path: circle();
+    margin: 1vw;
+}
+
+
+
+.circle:hover .circle_img {
+    animation: zoomIn 1.5s ease-in-out;
+    width: 180px;
+    height: 159px;
+    clip-path: circle();
+    margin: 1vw;
+
+   
+}
+
+.box1 {
+    object-fit: cover;
+    clip-path: circle();
+    width: 166px;
+    height: 159px;
+} 
+.box2 {
+    object-fit: cover;
+    clip-path: circle();
+    width: 166px;
+    height: 159px;
+}
+.box4 {
+    object-fit: cover;
+    clip-path: circle();
+    width: 166px;
+    height: 159px;
+}
+
+
+
+
+/*סוף חלק ג  */
+/*תחילת  חלק ד  */
+#section5 {
+    display: flex;
+    font-size: 1.1vw;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.section5-first-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 59px;
+    gap: 10px;
+}
+
+.section5-second-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 8vh;
+    position: relative;
+}
+
+    .section5-second-container h2 {
+        font-size: 3vw;
+        bottom: 5vh;
+        position: relative;
+    }
+
+.hand {
+    width: 650px;
+    height: 601px;
+    padding-top: 34px;
+}
+
+
+
+.ingridients {
+    clip-path: circle();
+}
+
+.c1 {
+    width: 15vw;
+}
+
+.c2 {
+    width: 18vw;
+}
+
+.c3 {
+    width: 11vw;
+}
+
+.arrow1 {
+    width: 7vw;
+    position: relative;
+    bottom: 302px;
+    right: 214px;
+    rotate: initial;
+    rotate: -106deg;
+}
+.arrow2 {
+    width: 6vw;
+    position: relative;
+    bottom: 494px;
+    right: 43px;
+    rotate: initial;
+    rotate: 288deg;
+}
+
+.arrow3 {
+    width: 14vw;
+    position: relative;
+    bottom: 407px;
+    left: 128px;
+    rotate: initial;
+    rotate: 355deg;
+}
+
+.contf1 {
+    height: 49vh;
+}
+
+.contf2 {
+    top: 7vh;
+    position: relative;
+}
+/*סוף חלק ד  */
+/*תחילת  חלק ה  */
+/*תחילת  פוטר  */
+#last-section {
+    font-size: 1vw;
+    width: 100vw;
+    background-color: #577058;
+    position: inherit;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fotterli {
+    margin-right: 20px;
+}
+
+.fotter-ul {
+    list-style: none;
+    color: white;
+    display: flex;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+/*אנימציות*/
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-7%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+
+
+
+@-webkit-keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        -webkit-transform: scale3d(0.3, 0.3, 0.3);
+        transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.animate__zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
